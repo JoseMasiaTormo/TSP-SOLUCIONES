@@ -846,12 +846,6 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-  .sidebar {
-    width: 0px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
   .sombra {
     height: 100%;
     width: 0%;
@@ -864,6 +858,9 @@ textarea {
     transition: 0s;
     opacity: 50%;
     z-index: 2;
+  }
+  .sidebar {
+    width: 0px;
   }
 }
 

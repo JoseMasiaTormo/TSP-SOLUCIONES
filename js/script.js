@@ -9,6 +9,9 @@ window.onload = function() {
     removeLabel();
     document.getElementById("tooltip").addEventListener("mouseover", toolTip);
     document.getElementById("tooltip").addEventListener("mouseout", toolTip);
+    document.getElementById('descargarCSV').onclick = function() {
+        descargarCSV();
+    }
 }   
 
 //Insertar datos a la base de datos (Primer formulario) /AJAX Puro/
@@ -150,4 +153,17 @@ function toolTip(elEvento) {
     } else if (evento.type === 'mouseout') {
         return nd();
     }
+}
+
+function descargarCSV() {
+    fetch('../php/sacar_datos_form1.php')
+        .then(response => response.text())
+        .then(datosCSV => {
+            const blob = new Blob([datosCSV], { type: 'text/csv' });
+
+            const enlaceDescarga = document.createElement('a');
+            enlaceDescarga.href = window.URL.createObjectURL(blob);
+            enlaceDescarga.download = 'datos.csv';
+            enlaceDescarga.click();
+        });
 }

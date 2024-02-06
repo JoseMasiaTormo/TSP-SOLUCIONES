@@ -64,6 +64,9 @@ $(document).ready(function () {
     });
 
     $("#etiqueta").customTooltip();
+    $('#descargarCSV2').click(function() {
+        descargarCSV();
+    });
 });
 
 function validar() {
@@ -185,6 +188,24 @@ function removeLabel() {
         }
     });
 
+}
+function descargarCSV() {
+    $.ajax({
+        url: '../php/sacar_datos_form2.php',
+        method: 'GET',
+        dataType: 'text',
+        success: function(datosCSV) {
+            const blob = new Blob([datosCSV], { type: 'text/csv' });
+
+            const enlaceDescarga = document.createElement('a');
+            enlaceDescarga.href = window.URL.createObjectURL(blob);
+            enlaceDescarga.download = 'datos_form2.csv';
+            enlaceDescarga.click();
+        },
+        error: function(xhr, status, error) {
+            console.error('Error en la solicitud AJAX:', status, error);
+        }
+    });
 }
 
 $.fn.customTooltip = function () {
