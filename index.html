@@ -16,9 +16,11 @@
     />
     <meta name="Robots" content="all" />
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
     <link rel="shortcut icon" href="images/informacion.png" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
     <title>TSP Soluciones</title>
   </head>
   <body>
@@ -45,8 +47,8 @@
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="index.html" class="button2 active">Inicio</a></li>
-          <li><a href="autodidacta.html" class="button2">Biblioteca</a></li>
+          <li><a href="#whoiam-select" class="button2">Inicio</a></li>
+          <li><a href="#books-title" class="button2">Biblioteca</a></li>
           <li><a href="" class="button2">¿Quienes Somos?</a></li>
         </ul>
       </nav>
@@ -58,7 +60,7 @@
     </header>
     <div id="extra"><br /></div>
     <div class="limits">
-      <section class="gridLayout">
+      <section class="gridLayout" id="whoiam-select">
         <div class="column">
           <img src="images/foto perfil color.jpg" id="img_working" alt="Imagen RRSS" />
           <p>tel. +34 666 666 666 | correo: 0EhY9@example.com</p>
@@ -96,48 +98,151 @@
     </div>
     <div class="grayLimits">
       <div class="limits">
-        <section class="gridLayout2">
-          <div class="column2">
-            <p>¡¡Hey tú, emprendedor audaz y amante de las oportunidades! 🚀</p>
-            <p>
-              ¿Listo para llevar tu juego comercial a nuevas alturas mientras dominas las redes sociales y sacas
-              provecho de la revolución de la IA? 📈🤖
-            </p>
+        <h2 id="books-title">BIBLIOTECA</h2>
+        <section>
+          <div class="gridLayout2">
+            <a
+              href="images/chatgpt-book.png"
+              data-lightbox="models"
+              data-title="ChatGPT. Tu asistente virtual para triunfar en la era digital"
+            >
+              <img src="images/chatgpt-book.png" alt="img1" id="img-first" />
+            </a>
+            <div id="sinopsis-1">
+              <p id="text-sinopsis">
+                ¿Eres estudiante buscando el camino para destacar en tus estudios? ¿Un administrativo tratando de
+                optimizar tu tiempo, empezando por simplificar tareas tediosas? ¿O quizás un ejecutivo con sed de
+                liderazgo en el mundo digital, deseando mejorar tus estrategias de marketing? No importa quién seas ni
+                en qué campo te desenvuelvas, este libro es para ti. Te enseñaré a utilizar ChatGPT con las estrategias
+                necesarias, con gran número de ejemplos para que veas totalmente viable desbloquear un abanico de
+                posibilidades.
+              </p>
+              <a
+                href="https://www.casadellibro.com/libro-chatgpt-tu-asistente-virtual-para-triunfar-en-la-era-digital/9788412546781/14517557"
+                class="button1"
+                >CASA DEL LIBRO</a
+              >
+              <a
+                href="https://www.amazon.es/ChatGPT-asistente-virtual-triunfar-digital/dp/8412546784/ref=sr_1_2?__mk_es_ES=ÅMÅŽÕÑ&crid=2M8DU23YZFDLE&dib=eyJ2IjoiMSJ9.QPKIRvSrSK-cVa8eobGCK5OecWt83uek1ftHPl9uYzI1j5qv27l1kyGQ2QQGC3Rbsf6bUUj_hiDKeb4mwpYdglhp1dkQdftoZ-HICoqX6-aLb5Y9tGmO1gB5frmulS23w8tj6qUfmZ4v0aiZpQEI4A.6YoAKRtcMe12NpSNQ7WGllaAEqsH7dXAipR0Ph_B7Jo&dib_tag=se&keywords=Marisa+Tormo&qid=1723552183&sprefix=marisa+tormo%2Caps%2C95&sr=8-2"
+                class="button1"
+                >AMAZON</a
+              >
+              <a
+                href="https://www.fnac.es/a10741516/Marisa-Tormo-Navarro-Chat-Gpt-Tu-Asistente-Virtual-Para-Triunfar-En-La-Era-Digita"
+                class="button1"
+                >FNAC</a
+              >
+            </div>
           </div>
-          <div class="column2">
-            <h2>Tribu ¡Cuenta Conmigo!</h2>
-            <p id="imagin"><strong>Imagina esto...</strong></p>
-            <p>
-              Un mundo donde tus estrategias comerciales son imparables, donde las redes sociales son tu terreno de
-              juego y la inteligencia artificial es tu aliada más valiosa.
-            </p>
-            <p>¡Bienvenido a nuestra comunidad exclusiva por solo <strong>30</strong> euros al mes!</p>
-            <p>¡Las respuestas que necesitas al alcance de tu dedo en un abrir y cerrar de ojos!</p>
-            <a href="cuentaConmigo.html" class="button3">Mas Información ⮕</a>
+          <div class="gridBooks1">
+            <div class="gridLayoutBooks move-up">
+              <a href="images/libro-conquista.jpg" data-lightbox="models" data-title="A la Conquista del Mundo Digital">
+                <img src="images/libro-conquista.jpg" alt="img2" class="img-second" />
+              </a>
+              <div class="sinopsis-2">
+                <p>
+                  ¿Te parece que la tecnología es difícil? ¡Te equivocas! Con esta guía fácil, descubre lo divertido de
+                  TikTok, Twitch, Discord, CapCut y BeReal. Conviértete en un experto digital y explora un mundo lleno
+                  de posibilidades conectadas. ¡Atrévete y disfruta del fascinante mundo digital!
+                </p>
+                <a
+                  href="https://www.casadellibro.com/libro-a-la-conquista-del-mundo-digital/9788412546743/14156513"
+                  class="button1-2"
+                  >CASA DEL LIBRO</a
+                >
+                <a
+                  href="https://www.amazon.es/CONQUISTA-DEL-MUNDO-DIGITAL-ChatGPT/dp/8412546741/ref=sr_1_3?__mk_es_ES=ÅMÅŽÕÑ&crid=8Q88XPK2EAQO&dib=eyJ2IjoiMSJ9.QPKIRvSrSK-cVa8eobGCK5OecWt83uek1ftHPl9uYzI1j5qv27l1kyGQ2QQGC3Rbsf6bUUj_hiDKeb4mwpYdglhp1dkQdftoZ-HICoqX6-aLb5Y9tGmO1gB5frmulS23w8tj6qUfmZ4v0aiZpQEI4A.6YoAKRtcMe12NpSNQ7WGllaAEqsH7dXAipR0Ph_B7Jo&dib_tag=se&keywords=Marisa+Tormo&qid=1723553534&sprefix=marisa+tormo%2Caps%2C225&sr=8-3"
+                  class="button1-2"
+                  >AMAZON</a
+                >
+                <a
+                  href="https://www.fnac.es/a10402533/Marisa-Tormo-Navarro-A-La-Conquista-Del-Mundo-Digital"
+                  class="button1-2"
+                  >FNAC</a
+                >
+              </div>
+            </div>
+            <div class="gridLayoutBooks">
+              <a href="images/movil.jpg" data-lightbox="models" data-title="El uso del movil para adultos">
+                <img src="images/movil.jpg" alt="img3" class="img-second" />
+              </a>
+              <div class="sinopsis-2">
+                <p>
+                  Aprenderás de manera accesible y sencilla a usar imágenes, videollamadas, mapas, compras en línea, y a
+                  dominar WhatsApp y redes sociales como Instagram, Facebook y Twitter. Con bloques estructurados y
+                  ejercicios ilustrados, podrás avanzar a tu ritmo y profundizar en el uso de Android de forma rápida y
+                  amena.
+                </p>
+                <a
+                  href="https://www.casadellibro.com/libro-el-uso-del-movil-para-adultos/9788412106923/11626273"
+                  class="button1-2"
+                  >CASA DEL LIBRO</a
+                >
+                <a
+                  href="https://www.amazon.es/uso-Móvil-para-Adultos-videollamadas/dp/841210692X/ref=sr_1_1?__mk_es_ES=ÅMÅŽÕÑ&crid=1Z8EJ18K0EKYJ&dib=eyJ2IjoiMSJ9.QPKIRvSrSK-cVa8eobGCK5OecWt83uek1ftHPl9uYzI1j5qv27l1kyGQ2QQGC3Rbsf6bUUj_hiDKeb4mwpYdglhp1dkQdftoZ-HICoqX6-aLb5Y9tGmO1gB5frmulS23w8tj6qUfmZ4v0aiZpQEI4A.6YoAKRtcMe12NpSNQ7WGllaAEqsH7dXAipR0Ph_B7Jo&dib_tag=se&keywords=Marisa+Tormo&qid=1723555786&sprefix=marisa+tormo%2Caps%2C142&sr=8-1"
+                  class="button1-2"
+                  >AMAZON</a
+                >
+                <a
+                  href="https://www.fnac.es/a7556146/Marisa-Tormo-Navarro-El-uso-del-movil-para-adultos"
+                  class="button1-2"
+                  >FNAC</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="gridLayout2">
+            <a href="images/linkedIn.jpg" data-lightbox="models" data-title="LinkedIn y Ventas">
+              <img src="images/linkedIn.jpg" alt="img4" id="img-third" />
+            </a>
+            <div id="sinopsis-1">
+              <p id="text-sinopsis">
+                Si crees que ya sabes usar LinkedIn, piénsalo de nuevo. Este libro te ofrece trucos y secretos para
+                mejorar tu estrategia y aprovechar al máximo esta red social. Aprenderás a aumentar ventas, expandir tu
+                red de contactos, interactuar globalmente, y redactar contenido atractivo. También descubrirás cómo
+                realizar búsquedas avanzadas sin una cuenta Premium y explorar herramientas de pago. ¡Es el momento de
+                llevar tu uso de LinkedIn al siguiente nivel!
+              </p>
+              <a href="https://www.casadellibro.com/libro-linkedin-y-ventas/9788412546705/13262158" class="button1"
+                >CASA DEL LIBRO</a
+              >
+              <a
+                href="https://www.amazon.es/LINKEDIN-VENTAS-estrategia-marketing-ganadora/dp/8412546709/ref=sr_1_4?__mk_es_ES=ÅMÅŽÕÑ&crid=30SIM3S80O3Q3&dib=eyJ2IjoiMSJ9.QPKIRvSrSK-cVa8eobGCK5OecWt83uek1ftHPl9uYzI1j5qv27l1kyGQ2QQGC3Rbsf6bUUj_hiDKeb4mwpYdglhp1dkQdftoZ-HICoqX6-aLb5Y9tGmO1gB5frmulS23w8tj6qUfmZ4v0aiZpQEI4A.6YoAKRtcMe12NpSNQ7WGllaAEqsH7dXAipR0Ph_B7Jo&dib_tag=se&keywords=Marisa+Tormo&qid=1723556213&sprefix=marisa+tormo%2Caps%2C95&sr=8-4"
+                class="button1"
+                >AMAZON</a
+              >
+              <a href="https://www.fnac.es/a9672289/Marisa-Tormo-Navarro-Linkedin-y-ventas" class="button1">FNAC</a>
+            </div>
+          </div>
+          <div class="other-books">
+            <div>
+              <a href="images/excel.jpg" data-lightbox="models" data-title="Excel práctico">
+                <img src="images/excel.jpg" alt="img5" class="img-fourth" />
+              </a>
+            </div>
+            <a href="images/office.jpg" data-lightbox="models" data-title="Office 2019 para todos">
+              <img src="images/office.jpg" alt="img6" class="img-fourth" />
+            </a>
+            <a href="images/secretariado.jpg" data-lightbox="models" data-title="Secretariado">
+              <img src="images/secretariado.jpg" alt="img7" class="img-fourth" />
+            </a>
+            <a href="images/photoshop.jpg" data-lightbox="models" data-title="Las cuatro estaciones de Photoshop">
+              <img src="images/photoshop.jpg" alt="img8" class="img-fourth" />
+            </a>
+            <a href="images/communityManager.jpg" data-lightbox="models" data-title="Community Manager">
+              <img src="images/communityManager.jpg" alt="img9" class="img-fourth" />
+            </a>
           </div>
         </section>
       </div>
     </div>
-    <div class="limits">
-      <section class="gridLayout3">
-        <div class="column" id="img-conquista-index"><img src="images/libro-conquista.jpg" alt="Foto del libro" /></div>
-        <div class="column">
-          <h2>Libros a la venta</h2>
-          <p>¿Tus conocimientos te hacen sentir obsoleto?</p>
-          <p>Adquiere alguno de nuestros cursos o libros de formación en nuevas tecnologías.</p>
-          <a href="autodidacta.html" class="button1">Biblioteca</a>
-        </div>
-        <div class="column" id="title2">
-          <h3>Formación</h3>
-        </div>
-      </section>
-    </div>
+    <div class="limits"><br /><br /><br /><br /></div>
     <div id="extra2"></div>
     <footer>
       <nav class="menu">
         <ul>
-          <li><a href="index.html" class="button2 active">Inicio</a></li>
-          <li><a href="autodidacta.html" class="button2">Biblioteca</a></li>
+          <li><a href="#whoiam-select" class="button2">Inicio</a></li>
+          <li><a href="#books-title" class="button2">Biblioteca</a></li>
           <li><a href="" class="button2">¿Quienes Somos?</a></li>
         </ul>
       </nav>
